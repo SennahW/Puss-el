@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class buttons : MonoBehaviour
+public class Buttons : MonoBehaviour
 {
     float speedLeft = 10f;
     float speedRight = -10f;
@@ -21,13 +21,11 @@ public class buttons : MonoBehaviour
         if (transform.position.x > speedLeft )
         {
             moveright = false;
-
         }
         else if (transform.position.x < speedRight )
         {
             moveright = true;
         }
-
         if (moveright == true)
         {
             transform.position = new Vector2(transform.position.x + myspeed * Time.deltaTime, transform.position.y);
