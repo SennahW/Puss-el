@@ -6,6 +6,7 @@ public class playerTwoMovement : MonoBehaviour
 {
     public float moveSpeed;
     public float jumpForce;
+    private bool facingRight = false;
 
     public KeyCode left;
     public KeyCode right;
