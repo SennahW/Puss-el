@@ -6,8 +6,8 @@ public class Buttons : MonoBehaviour
 {
     float speedLeft = 10f;
     float speedRight = -10f;
-    float dirX, myspeed = 4f;
-    bool moveright = true;
+    float dirX, mySpeed = 4f;
+    bool moveRight = true;
 
     // Start is called before the first frame update
     void Start()
@@ -20,19 +20,19 @@ public class Buttons : MonoBehaviour
     {
         if (transform.position.x > speedLeft )
         {
-            moveright = false;
+            moveRight = false;
         }
         else if (transform.position.x < speedRight )
         {
-            moveright = true;
+            moveRight = true;
         }
-        if (moveright == true)
+        if (moveRight == true)
         {
-            transform.position = new Vector2(transform.position.x + myspeed * Time.deltaTime, transform.position.y);
+            transform.position = new Vector2(transform.position.x + mySpeed * Time.deltaTime, transform.position.y);
         }
         else
         {
-            transform.position = new Vector2(transform.position.x - myspeed * Time.deltaTime, transform.position.y);
+            transform.position = new Vector2(transform.position.x - mySpeed * Time.deltaTime, transform.position.y);
         }
     }
 }
