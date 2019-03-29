@@ -5,23 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class DeathZone : MonoBehaviour
 {
-    private int nextSceneToLoad;
+    //private int nextSceneToLoad;
 
-    private void Start()
-    {
-        nextSceneToLoad = SceneManager.GetActiveScene().buildIndex + 1;
-    }
+    //private void Start()
+    //{
+    //    nextSceneToLoad = SceneManager.GetActiveScene().buildIndex + 1;
+    //}
 
     private void OnTriggerEnter2D(Collider2D collison)
     {
         if (collison.gameObject.name == "PlayerTwo")
         {
-            SceneManager.LoadScene(nextSceneToLoad);
+            SceneManager.LoadScene("Game Over");
         }
 
         if(collison.gameObject.name == "PlayerOne")
         {
-            SceneManager.LoadScene(nextSceneToLoad);
+            SceneManager.LoadScene("Game Over");
         }
     }
 }
