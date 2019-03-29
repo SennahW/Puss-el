@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class playerTwoMovement : MonoBehaviour
 {
+    private int nextSceneToLoad;
     public float moveSpeed;
     public float jumpForce;
-    private bool facingRight = false;
 
     public KeyCode left;
     public KeyCode right;
@@ -21,9 +21,10 @@ public class playerTwoMovement : MonoBehaviour
 
     public bool isGrounded;
 
-    void Start()
+    private void Start()
     {
         theRB = GetComponent<Rigidbody2D>();
+        nextSceneToLoad = SceneManager.GetActiveScene().buildIndex + 1;
     }
 
     void Update()
@@ -45,6 +46,14 @@ public class playerTwoMovement : MonoBehaviour
         if (Input.GetKeyDown(jump) && isGrounded)
         {
             theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collison)
+    {
+        if (collison.gameObject.name == "PlayerOne")
+        {
+            SceneManager.LoadScene(nextSceneToLoad);
         }
     }
 }
