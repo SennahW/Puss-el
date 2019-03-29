@@ -9,6 +9,9 @@ public class Buttons : MonoBehaviour
     float dirX, mySpeed = 4f;
     bool moveRight = true;
 
+    bool Happening = true;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,21 +21,40 @@ public class Buttons : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x > speedLeft )
+        if(Happening == true)
         {
-            moveRight = false;
+            if (transform.position.x > speedLeft)
+            {
+                moveRight = false;
+            }
+            else if (transform.position.x < speedRight)
+            {
+                moveRight = true;
+            }
+            if (moveRight == true)
+            {
+                transform.position = new Vector2(transform.position.x + mySpeed * Time.deltaTime, transform.position.y);
+            }
+            else
+            {
+                transform.position = new Vector2(transform.position.x - mySpeed * Time.deltaTime, transform.position.y);
+            }
         }
-        else if (transform.position.x < speedRight )
+       
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "player")
         {
-            moveRight = true;
+            Happening = true;
+
         }
-        if (moveRight == true)
-        {
-            transform.position = new Vector2(transform.position.x + mySpeed * Time.deltaTime, transform.position.y);
-        }
-        else
-        {
-            transform.position = new Vector2(transform.position.x - mySpeed * Time.deltaTime, transform.position.y);
-        }
+
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        Happening = false;
     }
 }
