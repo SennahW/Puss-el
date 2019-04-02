@@ -11,17 +11,18 @@ public class Buttons : MonoBehaviour
 
     bool Happening = true;
 
+    public bool yesItDoesWork;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Happening == true)
+        if (Happening == true && yesItDoesWork == true)
         {
             if (transform.position.x > speedLeft)
             {
@@ -40,25 +41,42 @@ public class Buttons : MonoBehaviour
                 transform.position = new Vector2(transform.position.x - mySpeed * Time.deltaTime, transform.position.y);
             }
         }
-       
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        Happening = false;
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-       
-        
-            Happening = true;
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
 
-        
-        
+    //    if (collision.gameObject.name == "PlayerOne")
+    //    {
+    //        Happening = false;
+    //    }
 
-    }
 
-    
+
+
+
+    //}
+
+    //private void OnCollisionExit2D(Collision2D collision)
+    //{
+
+
+    //   if(collision.gameObject.name == "PlayerOne")
+    //    {
+    //        Happening = true;
+    //    }
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
