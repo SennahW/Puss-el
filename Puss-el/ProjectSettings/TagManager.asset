@@ -38,6 +38,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: PlayerTeeth
+    uniqueID: 1989524643
+    locked: 0
+  - name: Players
+    uniqueID: 3338991215
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
