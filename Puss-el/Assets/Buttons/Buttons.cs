@@ -6,33 +6,77 @@ public class Buttons : MonoBehaviour
 {
     float speedLeft = 10f;
     float speedRight = -10f;
-    float dirX, myspeed = 4f;
-    bool moveright = true;
+    float dirX, mySpeed = 4f;
+    bool moveRight = true;
+
+    bool Happening = true;
+
+    public bool yesItDoesWork;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x > speedLeft )
+        if (Happening == true && yesItDoesWork == true)
         {
-            moveright = false;
+            if (transform.position.x > speedLeft)
+            {
+                moveRight = false;
+            }
+            else if (transform.position.x < speedRight)
+            {
+                moveRight = true;
+            }
+            if (moveRight == true)
+            {
+                transform.position = new Vector2(transform.position.x + mySpeed * Time.deltaTime, transform.position.y);
+            }
+            else
+            {
+                transform.position = new Vector2(transform.position.x - mySpeed * Time.deltaTime, transform.position.y);
+            }
         }
-        else if (transform.position.x < speedRight )
-        {
-            moveright = true;
-        }
-        if (moveright == true)
-        {
-            transform.position = new Vector2(transform.position.x + myspeed * Time.deltaTime, transform.position.y);
-        }
-        else
-        {
-            transform.position = new Vector2(transform.position.x - myspeed * Time.deltaTime, transform.position.y);
-        }
+
     }
+
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+
+    //    if (collision.gameObject.name == "PlayerOne")
+    //    {
+    //        Happening = false;
+    //    }
+
+
+
+
+
+    //}
+
+    //private void OnCollisionExit2D(Collision2D collision)
+    //{
+
+
+    //   if(collision.gameObject.name == "PlayerOne")
+    //    {
+    //        Happening = true;
+    //    }
+
+
+
+
+
+
+
+
 }
+
+
+
+
+

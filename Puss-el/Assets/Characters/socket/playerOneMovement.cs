@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class playerOneMovement : MonoBehaviour
 {
+    private int nextSceneToLoad;
     public float moveSpeed;
     public float jumpForce;
 
@@ -20,9 +21,10 @@ public class playerOneMovement : MonoBehaviour
 
     public bool isGrounded;
 
-    void Start()
+    private void Start()
     {
         theRB = GetComponent<Rigidbody2D>();
+        nextSceneToLoad = SceneManager.GetActiveScene().buildIndex + 1;
     }
 
     void Update()
@@ -44,6 +46,14 @@ public class playerOneMovement : MonoBehaviour
         if(Input.GetKeyDown(jump) && isGrounded)
         {
             theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collison)
+    {
+        if (collison.gameObject.name == "PlayerTwo")
+        {
+            SceneManager.LoadScene(nextSceneToLoad);
         }
     }
 }
