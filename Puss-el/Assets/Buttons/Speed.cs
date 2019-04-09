@@ -22,7 +22,7 @@ public class Speed : MonoBehaviour
     private void OnCollisionExit2D(Collision2D collision)
     {
         Debug.Log("Collision Exit");
-        if (collision.gameObject.name == "PlayerOne")
+        if (collision.gameObject.tag == "PlayerOne")
         {
             platForm.GetComponent<Buttons>().yesItDoesWork = false;
         }
@@ -34,7 +34,7 @@ public class Speed : MonoBehaviour
     {
 
         Debug.Log("Collision Enter");
-        if (collision.gameObject.name == "PlayerOne")
+        if (collision.gameObject.tag == "PlayerOne")
         {
             platForm.GetComponent<Buttons>().yesItDoesWork = true;
         }
@@ -43,7 +43,7 @@ public class Speed : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "PlayerOne")
+        if (collision.gameObject.tag == "PlayerOne")
         {
             platForm.GetComponent<Buttons>().yesItDoesWork = true;
         }
@@ -51,7 +51,7 @@ public class Speed : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "PlayerOne")
+        if (collision.gameObject.tag == "PlayerOne")
         {
             platForm.GetComponent<Buttons>().yesItDoesWork = false;
         }
