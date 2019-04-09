@@ -182,7 +182,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 'Play Again
+
+'
 --- !u!222 &24529899
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -269,7 +271,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 108301200}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1197020146}
+        m_MethodName: PlayAgain
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &108301200
@@ -487,6 +500,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1197020145}
+  - component: {fileID: 1197020146}
   m_Layer: 5
   m_Name: Victory
   m_TagString: Untagged
@@ -510,6 +524,18 @@ Transform:
   m_Father: {fileID: 574356269}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1197020146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197020144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a50148d08059b04c8d05eba445ed935, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1236799746
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,8 +570,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.050049, y: 12.7}
-  m_SizeDelta: {x: 1023.9, y: 1157.1}
+  m_AnchoredPosition: {x: 0.050049, y: 11.74}
+  m_SizeDelta: {x: 1023.9, y: 1166.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1236799748
 MonoBehaviour:
@@ -889,7 +915,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1800632712}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1197020146}
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1800632712
