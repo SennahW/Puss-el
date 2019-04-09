@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Buttons : MonoBehaviour
 {
-    float speedLeft = 10f;
-    float speedRight = -10f;
-    float dirX, mySpeed = 4f;
+    float speedLeft = 5f;
+    float speedRight = -5f;
+    float dirX, mySpeed = 2f;
     bool moveRight = true;
 
     bool Happening = true;
@@ -27,6 +27,7 @@ public class Buttons : MonoBehaviour
             if (transform.position.x > speedLeft)
             {
                 moveRight = false;
+
             }
             else if (transform.position.x < speedRight)
             {
@@ -49,30 +50,30 @@ public class Buttons : MonoBehaviour
 
     //    if (collision.gameObject.name == "PlayerOne")
     //    {
-    //        Happening = false;
+
     //    }
-
-
 
 
 
     //}
 
-    //private void OnCollisionExit2D(Collision2D collision)
-    //{
+        //}
+
+        //private void OnCollisionExit2D(Collision2D collision)
+        //{
 
 
-    //   if(collision.gameObject.name == "PlayerOne")
-    //    {
-    //        Happening = true;
-    //    }
-
-
-
-
-
+        //   if(collision.gameObject.name == "PlayerOne")
+        //    {
+        //        Happening = true;
+        //    }
 
 
 
-}
+
+
+
+
+
+    }
 
