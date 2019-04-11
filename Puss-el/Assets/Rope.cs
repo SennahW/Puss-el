@@ -1,18 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Rope : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public HingeJoint2D hook;
+
+    public GameObject CableLinkPrefab;
+
+    public float links;
+
     void Start()
     {
-        
+        GenerateRope();
     }
 
-    // Update is called once per frame
-    void Update()
+    void GenerateRope()
     {
-        
+        for (int i = 0; i < links; i++)
+        {
+
+        }
     }
 }
