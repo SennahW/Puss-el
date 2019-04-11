@@ -9,6 +9,9 @@ public class playerOneMovement : MonoBehaviour
     public float moveSpeed;
     public float jumpForce;
 
+    public bool playerMove = false;
+    private int itGoesFast = 10;
+
     public KeyCode left;
     public KeyCode right;
     public KeyCode jump;
@@ -37,6 +40,8 @@ public class playerOneMovement : MonoBehaviour
         else if (Input.GetKey(right))
         {
             theRB.velocity = new Vector2(moveSpeed, theRB.velocity.y);
+
+           
         }
         else
         {
@@ -56,4 +61,21 @@ public class playerOneMovement : MonoBehaviour
             SceneManager.LoadScene(nextSceneToLoad);
         }
     }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if(col.gameObject.tag.Equals("Moving platform"))
+        {
+            this.transform.parent = col.transform;
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D col)
+    {
+        if (col.gameObject.tag.Equals("Moving platform"))
+        {
+            this.transform.parent = null;
+        }
+    }
+
 }
