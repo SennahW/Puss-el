@@ -1,9 +1,7 @@
 fileFormatVersion: 2
-guid: f237248591690894ab1474ecb4c9209f
+guid: 7da7970e663931b45b4d2ad98587fc0f
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: pixil-frame-0_(31)_0
-    21300002: pixil-frame-0_(31)_1
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -42,13 +40,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
-  spritePivot: {x: 0.1606168, y: 0.119300395}
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 512
-  spriteBorder: {x: 9, y: 540, z: 431, w: 261}
+  spriteBorder: {x: 436, y: 440, z: 0, w: 340}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -84,51 +82,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: pixil-frame-0_(31)_0
-      rect:
-        serializedVersion: 2
-        x: 250
-        y: 540
-        width: 320
-        height: 200
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e0fd885b30c72349b04c5a6bff5868d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixil-frame-0_(31)_1
-      rect:
-        serializedVersion: 2
-        x: 570
-        y: 550
-        width: 99
-        height: 180
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 615aed5ffdadc5e4fb4b953ac4caed71
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: cfe1ad00ec8aadb4c86062426ebab9fb
+    spriteID: 3f9d4f1b6630f844d965ffce868823bb
     vertices: []
     indices: 
     edges: []
