@@ -2,29 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Speed : MonoBehaviour
+public class SendInformation : MonoBehaviour
 {
+    public GameObject UpAndDown;
 
-    public GameObject platForm;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
-
     private void OnCollisionExit2D(Collision2D collision)
     {
         Debug.Log("Collision Exit");
         if (collision.gameObject.tag == "PlayerOne")
         {
-            platForm.GetComponent<Buttons>().yesItDoesWork = false;
+            UpAndDown.GetComponent<PlatformUp>().yesItDoesWork = false;
         }
 
 
@@ -36,7 +35,7 @@ public class Speed : MonoBehaviour
         Debug.Log("Collision Enter");
         if (collision.gameObject.tag == "PlayerOne")
         {
-            platForm.GetComponent<Buttons>().yesItDoesWork = true;
+            UpAndDown.GetComponent<PlatformUp>().yesItDoesWork = true;
         }
 
     }
@@ -45,7 +44,7 @@ public class Speed : MonoBehaviour
     {
         if (collision.gameObject.tag == "PlayerOne")
         {
-            platForm.GetComponent<Buttons>().yesItDoesWork = true;
+            UpAndDown.GetComponent<PlatformUp>().yesItDoesWork = true;
         }
     }
 
@@ -53,14 +52,7 @@ public class Speed : MonoBehaviour
     {
         if (collision.gameObject.tag == "PlayerOne")
         {
-            platForm.GetComponent<Buttons>().yesItDoesWork = false;
+            UpAndDown.GetComponent<PlatformUp>().yesItDoesWork = false;
         }
     }
-
-
-
-
 }
-
-
-
