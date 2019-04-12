@@ -56,7 +56,7 @@ public class playerOneMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collison)
     {
-        if (collison.gameObject.name == "PlayerTwo")
+        if (collison.gameObject.tag == "PlayerTwo")
         {
             SceneManager.LoadScene(nextSceneToLoad);
         }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PlayerOne
   - Moving platform
+  - PlayerTwo
   layers:
   - Default
   - TransparentFX

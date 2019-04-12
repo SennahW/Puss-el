@@ -51,7 +51,7 @@ public class Buttons : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        Debug.Log("Collision Exit");
+        //Debug.Log("Collision Exit");
         if (collision.gameObject.name == "PlayerOne")
         {
             Moves.GetComponent<playerOneMovement>().playerMove = false;
@@ -64,7 +64,7 @@ public class Buttons : MonoBehaviour
     {
 
 
-        Debug.Log("Collision Enter");
+        //Debug.Log("Collision Enter");
         if (collision.gameObject.name == "PlayerOne")
         {
             Moves.GetComponent<playerOneMovement>().playerMove = true;
