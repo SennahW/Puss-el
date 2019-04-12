@@ -1,9 +1,10 @@
 fileFormatVersion: 2
-guid: f237248591690894ab1474ecb4c9209f
+guid: 7da7970e663931b45b4d2ad98587fc0f
 TextureImporter:
   fileIDToRecycleName:
-    21300000: pixil-frame-0_(31)_0
-    21300002: pixil-frame-0_(31)_1
+    21300000: PlayerTwo_0
+    21300002: PlayerTwo_1
+    21300004: PlayerTwo_2
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -45,10 +46,10 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
-  spritePivot: {x: 0.1606168, y: 0.119300395}
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 512
-  spriteBorder: {x: 9, y: 540, z: 431, w: 261}
+  spriteBorder: {x: 436, y: 440, z: 213, w: 340}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -86,33 +87,53 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pixil-frame-0_(31)_0
+      name: PlayerTwo_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 540
+        x: 430
+        y: 440
         width: 570
-        height: 200
+        height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e0fd885b30c72349b04c5a6bff5868d
+      spriteID: e6e3fd610f062884b95949f9794040f5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixil-frame-0_(31)_1
+      name: PlayerTwo_1
       rect:
         serializedVersion: 2
-        x: 570
-        y: 550
-        width: 99
-        height: 180
+        x: 428
+        y: 440
+        width: 361
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92125d6165af6c8489bd8201a423f536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerTwo_2
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 447
+        width: 203
+        height: 213
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -120,7 +141,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 615aed5ffdadc5e4fb4b953ac4caed71
+      spriteID: 079e128153a4db64b9b1209e1a675d21
       vertices: []
       indices: 
       edges: []
@@ -128,7 +149,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: cfe1ad00ec8aadb4c86062426ebab9fb
+    spriteID: 3f9d4f1b6630f844d965ffce868823bb
     vertices: []
     indices: 
     edges: []
