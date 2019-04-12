@@ -12,7 +12,7 @@ public class DeathZone : MonoBehaviour
             SceneManager.LoadScene("Game Over");
         }
 
-        if(collison.gameObject.name == "PlayerOne")
+        if(collison.gameObject.name == "Teeth")
         {
             SceneManager.LoadScene("Game Over");
         }
