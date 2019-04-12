@@ -23,7 +23,7 @@ public class SendInformation : MonoBehaviour
         Debug.Log("Collision Exit");
         if (collision.gameObject.tag == "PlayerOne")
         {
-            UpAndDown.GetComponent<PlatformUp>().yesItDoesWork = false;
+            //UpAndDown.GetComponent<PlatformUp>().yesItDoesWork = false;
         }
 
 
@@ -35,7 +35,7 @@ public class SendInformation : MonoBehaviour
         Debug.Log("Collision Enter");
         if (collision.gameObject.tag == "PlayerOne")
         {
-            UpAndDown.GetComponent<PlatformUp>().yesItDoesWork = true;
+           // UpAndDown.GetComponent<PlatformUp>().yesItDoesWork = true;
         }
 
     }
@@ -44,7 +44,7 @@ public class SendInformation : MonoBehaviour
     {
         if (collision.gameObject.tag == "PlayerOne")
         {
-            UpAndDown.GetComponent<PlatformUp>().yesItDoesWork = true;
+           // UpAndDown.GetComponent<PlatformUp>().yesItDoesWork = true;
         }
     }
 
@@ -52,7 +52,7 @@ public class SendInformation : MonoBehaviour
     {
         if (collision.gameObject.tag == "PlayerOne")
         {
-            UpAndDown.GetComponent<PlatformUp>().yesItDoesWork = false;
+           // UpAndDown.GetComponent<PlatformUp>().yesItDoesWork = false;
         }
     }
 }
