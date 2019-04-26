@@ -726,8 +726,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &364296485
-BoxCollider2D:
+--- !u!70 &364296485
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -735,23 +735,13 @@ BoxCollider2D:
   m_GameObject: {fileID: 364296482}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: af0b058d6d5605e4f9c388d23ba83dc3, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0005979538, y: 0.0023922622}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.625, y: 0.390625}
-    newSize: {x: 0.5566406, y: 0.1953125}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.62433624, y: 0.38038367}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0.03, y: 0}
+  m_Size: {x: 0.66, y: 0.39}
+  m_Direction: 1
 --- !u!1 &397278846
 GameObject:
   m_ObjectHideFlags: 0
@@ -1359,8 +1349,8 @@ GameObject:
   m_Component:
   - component: {fileID: 940727835}
   - component: {fileID: 940727836}
-  - component: {fileID: 940727838}
   - component: {fileID: 940727839}
+  - component: {fileID: 940727837}
   m_Layer: 0
   m_Name: PlayerTwo
   m_TagString: PlayerTwo
@@ -1406,8 +1396,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &940727838
-BoxCollider2D:
+--- !u!70 &940727837
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1415,23 +1405,13 @@ BoxCollider2D:
   m_GameObject: {fileID: 940727834}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: af0b058d6d5605e4f9c388d23ba83dc3, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0032258034, y: 0.000954628}
-  m_SpriteTilingProperty:
-    border: {x: 0.42578125, y: 0.4296875, z: 0, w: 0.33203125}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.9765625, y: 0.9765625}
-    newSize: {x: 0.16, y: 0.16}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.7031832, y: 0.42678046}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0.03, y: 0}
+  m_Size: {x: 0.66, y: 0.39}
+  m_Direction: 1
 --- !u!114 &940727839
 MonoBehaviour:
   m_ObjectHideFlags: 0
