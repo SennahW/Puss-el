@@ -49,7 +49,7 @@ public class TheEnemySaxScript : MonoBehaviour
             SceneManager.LoadScene("Game Over");
         }
 
-        if (collison.gameObject.name == "Teeth")
+        if (collison.gameObject.name == "Body")
         {
             SceneManager.LoadScene("Game Over");
         }
