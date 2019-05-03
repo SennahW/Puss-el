@@ -21,8 +21,11 @@ public class playerTwoMovement : MonoBehaviour
 
     public bool isGrounded;
 
+    public int buildIndex;
+
     private void Start()
-    {
+    {   Scene currentScene= SceneManager.GetActiveScene();
+        buildIndex = currentScene.buildIndex;
         theRB = GetComponent<Rigidbody2D>();
         nextSceneToLoad = SceneManager.GetActiveScene().buildIndex + 1;
     }
@@ -53,7 +56,15 @@ public class playerTwoMovement : MonoBehaviour
     {
         if (collison.gameObject.tag == "PlayerOne")
         {
-            SceneManager.LoadScene(nextSceneToLoad);
+            if (buildIndex == 1)
+            {
+                PlayerPrefs.SetFloat("LevelOneCompleted", 1);
+            }
+            if (buildIndex == 2)
+            {
+                PlayerPrefs.SetFloat("LevelTwoCompleted", 1);
+            }
+            SceneManager.LoadScene(5);
         }
     }
 
