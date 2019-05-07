@@ -52,7 +52,7 @@ public class Buttons : MonoBehaviour
     private void OnCollisionExit2D(Collision2D collision)
     {
         //Debug.Log("Collision Exit");
-        if (collision.gameObject.name == "PlayerOne")
+        if (collision.gameObject.name == "Body")
         {
             Moves.GetComponent<playerOneMovement>().playerMove = false;
         }
@@ -65,7 +65,7 @@ public class Buttons : MonoBehaviour
 
 
         //Debug.Log("Collision Enter");
-        if (collision.gameObject.name == "PlayerOne")
+        if (collision.gameObject.name == "Body")
         {
             Moves.GetComponent<playerOneMovement>().playerMove = true;
         }
@@ -74,7 +74,7 @@ public class Buttons : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "PlayerOne")
+        if (collision.gameObject.name == "Body")
         {
             Moves.GetComponent<playerOneMovement>().playerMove = true;
         }
@@ -82,7 +82,7 @@ public class Buttons : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "PlayerOne")
+        if (collision.gameObject.name == "Body")
         {
             Moves.GetComponent<playerOneMovement>().playerMove = false;
         }

@@ -40,14 +40,18 @@ public class PlatformUp : MonoBehaviour
     private void Move()
     {
        
-        
-
+        if(yesItDoesWork == true)
+        {
             childTransform.localPosition = Vector3.MoveTowards(childTransform.localPosition, nextPos, speed * Time.deltaTime);
 
             if (Vector3.Distance(childTransform.localPosition, nextPos) <= 0.1)
             {
                 Changedestination();
             }
+
+        }
+
+            
 
 
         

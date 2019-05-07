@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SendInformation : MonoBehaviour
+public class SendInformationToSwitch : MonoBehaviour
 {
     public GameObject UpAndDown;
 
@@ -21,7 +21,7 @@ public class SendInformation : MonoBehaviour
     private void OnCollisionExit2D(Collision2D collision)
     {
         Debug.Log("Collision Exit");
-        if (collision.gameObject.tag == "PlayerOne")
+        if (collision.gameObject.tag == "PlayerOne" && collision.gameObject.name == "Body")
         {
            UpAndDown.GetComponent<PlatformUp>().yesItDoesWork = false;
         }
@@ -33,7 +33,7 @@ public class SendInformation : MonoBehaviour
     {
 
         Debug.Log("Collision Enter");
-        if (collision.gameObject.tag == "PlayerOne")
+        if (collision.gameObject.tag == "PlayerOne" && collision.gameObject.name == "Body")
         {
            UpAndDown.GetComponent<PlatformUp>().yesItDoesWork = true;
         }
@@ -42,7 +42,7 @@ public class SendInformation : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "PlayerOne")
+        if (collision.gameObject.tag == "PlayerOne" && collision.gameObject.name == "Body")
         {
            UpAndDown.GetComponent<PlatformUp>().yesItDoesWork = true;
         }
@@ -50,7 +50,7 @@ public class SendInformation : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "PlayerOne")
+        if (collision.gameObject.tag == "PlayerOne" && collision.gameObject.name == "Body")
         {
             UpAndDown.GetComponent<PlatformUp>().yesItDoesWork = false;
         }

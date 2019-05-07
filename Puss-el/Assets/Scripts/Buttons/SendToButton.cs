@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Speed : MonoBehaviour
+public class SendToButton : MonoBehaviour
 {
 
     public GameObject platForm;
@@ -34,7 +34,7 @@ public class Speed : MonoBehaviour
     {
 
         Debug.Log("Collision Enter");
-        if (collision.gameObject.tag == "PlayerOne")
+        if (collision.gameObject.tag == "PlayerOne" && collision.gameObject.name == "Body")
         {
             platForm.GetComponent<Buttons>().yesItDoesWork = true;
         }
@@ -43,7 +43,7 @@ public class Speed : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "PlayerOne")
+        if (collision.gameObject.tag == "PlayerOne" && collision.gameObject.name == "Body")
         {
             platForm.GetComponent<Buttons>().yesItDoesWork = true;
         }
@@ -51,7 +51,7 @@ public class Speed : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "PlayerOne")
+        if (collision.gameObject.tag == "PlayerOne" && collision.gameObject.name == "Body")
         {
             platForm.GetComponent<Buttons>().yesItDoesWork = false;
         }
