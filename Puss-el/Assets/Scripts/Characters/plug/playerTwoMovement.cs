@@ -20,6 +20,7 @@ public class playerTwoMovement : MonoBehaviour
     public LayerMask whatIsGround;
 
     public bool isGrounded;
+    public bool facingRight;
 
     public int buildIndex;
 
@@ -49,6 +50,14 @@ public class playerTwoMovement : MonoBehaviour
         if (Input.GetKeyDown(jump) && isGrounded)
         {
             theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+        }
+        if (theRB.velocity.x > 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+        else if (theRB.velocity.x < 0)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
         }
     }
 

@@ -44,8 +44,6 @@ public class playerOneMovement : MonoBehaviour
         else if (Input.GetKey(right))
         {
             theRB.velocity = new Vector2(moveSpeed, theRB.velocity.y);
-
-           
         }
         else
         {
@@ -55,6 +53,14 @@ public class playerOneMovement : MonoBehaviour
         if(Input.GetKeyDown(jump) && isGrounded)
         {
             theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+        }
+        if (theRB.velocity.x < 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+        else if (theRB.velocity.x > 0)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
         }
     }
 
