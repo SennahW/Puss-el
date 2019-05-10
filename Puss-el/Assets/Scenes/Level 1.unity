@@ -3314,7 +3314,7 @@ GameObject:
   - component: {fileID: 2043297463}
   - component: {fileID: 2043297465}
   m_Layer: 0
-  m_Name: TheEnemySAX
+  m_Name: "TheEnemySax\xA8"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
