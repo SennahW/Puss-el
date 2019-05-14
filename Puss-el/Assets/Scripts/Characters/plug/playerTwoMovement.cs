@@ -21,6 +21,7 @@ public class playerTwoMovement : MonoBehaviour
 
     public bool isGrounded;
     public bool facingRight;
+    Vector3 Myvector;
 
     public int buildIndex;
 
@@ -51,13 +52,13 @@ public class playerTwoMovement : MonoBehaviour
         {
             theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
         }
-        if (theRB.velocity.x > 0)
+        if (theRB.velocity.x > 0) //Fel, rotera i z led istället.
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            
         }
         else if (theRB.velocity.x < 0)
         {
-            transform.localScale = new Vector3(1, 1, 1);
+            
         }
     }
 
