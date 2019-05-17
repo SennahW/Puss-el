@@ -53,11 +53,11 @@ public class playerTwoMovement : MonoBehaviour
         }
         if (theRB.velocity.x > 0)
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            transform.eulerAngles = new Vector3(0, 180, 0);
         }
         else if (theRB.velocity.x < 0)
         {
-            transform.localScale = new Vector3(1, 1, 1);
+            transform.eulerAngles = new Vector3(0, 0, 0);
         }
     }
 
