@@ -22,7 +22,7 @@ public class SendToButton : MonoBehaviour
     private void OnCollisionExit2D(Collision2D collision)
     {
         Debug.Log("Collision Exit");
-        if (collision.gameObject.tag == "PlayerOne")
+        if (collision.gameObject.tag == "PlayerOne" && collision.gameObject.name == "Body")
         {
             platForm.GetComponent<Buttons>().yesItDoesWork = false;
         }
