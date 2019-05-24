@@ -72,77 +72,9 @@ public class playerOneMovement : MonoBehaviour
             {
                 PlayerPrefs.SetFloat("LevelOneCompleted", 1);
             }
-            else if (buildIndex == 2)
+            if (buildIndex == 2)
             {
                 PlayerPrefs.SetFloat("LevelTwoCompleted", 1);
-            }
-            else if (buildIndex == 6)
-            {
-                PlayerPrefs.SetFloat("LevelThreeCompleted", 1);
-            }
-            else if (buildIndex == 7)
-            {
-                PlayerPrefs.SetFloat("LevelFourCompleted", 1);
-            }
-            else if (buildIndex == 8)
-            {
-                PlayerPrefs.SetFloat("LevelFiveCompleted", 1);
-            }
-            else if (buildIndex == 9)
-            {
-                PlayerPrefs.SetFloat("LevelSixCompleted", 1);
-            }
-            else if (buildIndex == 10)
-            {
-                PlayerPrefs.SetFloat("LevelSevenCompleted", 1);
-            }
-            else if (buildIndex == 11)
-            {
-                PlayerPrefs.SetFloat("LevelEightCompleted", 1);
-            }
-            else if (buildIndex == 12)
-            {
-                PlayerPrefs.SetFloat("LevelNineCompleted", 1);
-            }
-            else if (buildIndex == 13)
-            {
-                PlayerPrefs.SetFloat("LevelTenCompleted", 1);
-            }
-            else if (buildIndex == 14)
-            {
-                PlayerPrefs.SetFloat("LevelElevenCompleted", 1);
-            }
-            else if (buildIndex == 15)
-            {
-                PlayerPrefs.SetFloat("LevelTwelveCompleted", 1);
-            }
-            else if (buildIndex == 16)
-            {
-                PlayerPrefs.SetFloat("LevelThirteenCompleted", 1);
-            }
-            else if (buildIndex == 17)
-            {
-                PlayerPrefs.SetFloat("LevelFourteenCompleted", 1);
-            }
-            else if (buildIndex == 18)
-            {
-                PlayerPrefs.SetFloat("LevelFifteenCompleted", 1);
-            }
-            else if (buildIndex == 19)
-            {
-                PlayerPrefs.SetFloat("LevelSixteenCompleted", 1);
-            }
-            else if (buildIndex == 20)
-            {
-                PlayerPrefs.SetFloat("LevelSeventeenCompleted", 1);
-            }
-            else if (buildIndex == 21)
-            {
-                PlayerPrefs.SetFloat("LevelEighteenCompleted", 1);
-            }
-            else if (buildIndex == 22)
-            {
-                PlayerPrefs.SetFloat("LevelNineteenCompleted", 1);
             }
             SceneManager.LoadScene(5);        
         }
