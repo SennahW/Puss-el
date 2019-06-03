@@ -2633,7 +2633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 747eb06f37d09ee48a7ced28b576a728, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UpAndDown: {fileID: 1438065219}
+  UpAndDown: {fileID: 649826827}
 --- !u!50 &1475408831
 Rigidbody2D:
   serializedVersion: 4
