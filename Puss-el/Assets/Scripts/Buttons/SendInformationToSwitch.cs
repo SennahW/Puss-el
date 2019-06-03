@@ -21,7 +21,7 @@ public class SendInformationToSwitch : MonoBehaviour
     private void OnCollisionExit2D(Collision2D collision)
     {
         Debug.Log("Collision Exit");
-        if (collision.gameObject.tag == "PlayerOne" && collision.gameObject.name == "Body")
+        if (collision.gameObject.tag == "PlayerOne" && collision.gameObject.name == "Body" || collision.gameObject.tag == "PlayerTwo" )
         {
            UpAndDown.GetComponent<PlatformUp>().yesItDoesWork = false;
         }
@@ -33,7 +33,7 @@ public class SendInformationToSwitch : MonoBehaviour
     {
 
         Debug.Log("Collision Enter");
-        if (collision.gameObject.tag == "PlayerOne" && collision.gameObject.name == "Body")
+        if (collision.gameObject.tag == "PlayerOne" && collision.gameObject.name == "Body" || collision.gameObject.tag == "PlayerTwo" )
         {
            UpAndDown.GetComponent<PlatformUp>().yesItDoesWork = true;
         }
@@ -42,7 +42,7 @@ public class SendInformationToSwitch : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "PlayerOne" && collision.gameObject.name == "Body")
+        if (collision.gameObject.tag == "PlayerOne" && collision.gameObject.name == "Body" || collision.gameObject.tag == "PlayerTwo" )
         {
            UpAndDown.GetComponent<PlatformUp>().yesItDoesWork = true;
         }
@@ -50,7 +50,7 @@ public class SendInformationToSwitch : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "PlayerOne" && collision.gameObject.name == "Body")
+        if (collision.gameObject.tag == "PlayerOne" && collision.gameObject.name == "Body" || collision.gameObject.tag == "PlayerTwo" )
         {
             UpAndDown.GetComponent<PlatformUp>().yesItDoesWork = false;
         }
