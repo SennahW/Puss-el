@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Buttons : MonoBehaviour
 {
-    float speedLeft = 5f;
-    float speedRight = -5f;
-    float dirX, mySpeed = 2f;
+    public float speedLeft = 5f;
+    public float speedRight = -5f;
+    public float dirX, mySpeed = 2f;
     bool moveRight = true;
     
     bool happening = true;
