@@ -1210,8 +1210,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9438ce390d075042b471a34b69a4da8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpeedLeft: -11.5
-  enemySpeedRight: -14.3
+  enemySpeedLeft: 1
+  enemySpeedRight: -2
 --- !u!70 &633654894
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -4920,8 +4920,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9438ce390d075042b471a34b69a4da8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpeedLeft: -11.5
-  enemySpeedRight: -14.3
+  enemySpeedLeft: -4
+  enemySpeedRight: -9
 --- !u!70 &1860269123
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
