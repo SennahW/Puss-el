@@ -41,6 +41,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Bakrund
+    uniqueID: 4201786187
+    locked: 0
   - name: PlayerTeeth
     uniqueID: 1989524643
     locked: 0
